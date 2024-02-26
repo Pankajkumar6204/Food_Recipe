@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 246, 234);
+    overflow-x: hidden;
+}
+
+/* Heading Section  */
+#recipe-img{
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+}
+#recipe-img img{
+    border-radius: 16px;
+    margin: 22px ;
+
+}
+
+/* About Section  */
+#about{
+    margin: 22px 120px;
+}
+#about h2{
+    font-size: 54px;
+    font-weight: 800;
+}
+#about p{
+    font-size: 22px;
+    max-width: 86%;
+}
+
+#prepare-time{
+    height: 220px;
+    width: 85%;
+    background-color: rgb(245, 226, 229);
+    padding: 22px 70px;
+    margin: 0 120px;
+    
+}
+#prepare-time h3{
+    font-size: 32px;
+    margin-left: -18px;
+    color: rgb(67, 33, 83);
+    padding: 14px 0;
+}
+#prepare-time ul{
+    color: rgb(74, 72, 72);
+    font-size: 20px;
+    list-style-type: disc;
+    list-style-position: inside;
+ 
+}
+#prepare-time li{
+    padding: 6px 0;
+}
+#prepare-time span{
+    color: rgb(3, 2, 2);
+}
+
+#ingredient{
+    margin: 22px 128px;
+}
+#ingredient h3{
+    font-size: 42px;
+    margin-left: -18px;
+    color: rgb(67, 33, 83);
+    padding: 14px 0;
+    letter-spacing: 2px;
+}
+#ingredient ul{
+    color: rgb(74, 72, 72);
+    font-size: 24px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+#ingredient li{
+    padding: 4px 0;
+}
+#ingredient #border-bottom{
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgb(90, 88, 88);
+}
+
+/* Instruction Section  */
+#instruction{
+    margin: 22px 128px;
+}
+#instruction h3{
+    font-size: 42px;
+    margin-left: -18px;
+    color: rgb(67, 33, 83);
+    padding: 14px 0;
+    letter-spacing: 2px;
+}
+#instruction ul{
+    padding-left: 22px;
+    list-style: number;
+    font-size: 23px;
+    line-height: 42px;
+}
+#instruction ul span{
+    color: rgb(11, 11, 11);
+}
+#instruction li{
+    color: rgb(80, 78, 78);
+    padding: 8px 0;
+}
+#instruction #border-bottom{
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgb(90, 88, 88); 
+}
+
+/* Footer Section  */
+#nutrition{
+    margin: 22px 128px;
+}
+#nutrition h3{
+    font-size: 44px;
+    margin-left: -18px;
+    color: rgb(67, 33, 83);
+    padding: 14px 0;
+    letter-spacing: 2px;
+}
+#nutrition p{
+    font-size: 26px;
+    color: rgb(80, 78, 78);
+}
+#nutrition .benefits{
+    display: flex;
+    justify-content: start;
+    padding: 32px 62px;
+}
+.benefits h2:nth-child(1){
+    color: rgb(80, 78, 78);
+}
+.benefits #value{
+    color: rgb(67, 33, 83);
+}
+#nutrition #benefits1{
+    gap: 522px;
+}
+#nutrition #benefits2{
+    border-top: 1px solid rgb(90, 88, 88);
+    gap: 543px;
+}
+#nutrition #benefits3{
+    border-top: 1px solid rgb(90, 88, 88);
+    gap: 528px;
+}
+#nutrition #benefits4{
+    border-top: 1px solid rgb(90, 88, 88);
+    gap: 565px;
+    padding-bottom: 60px;
+}
+
+/* Ipad Screen  Responsive  */
+@media only screen and (max-width: 820px){
+    .container{
+        background-color: rgb(250, 246, 234);
+        /* background-color: red; */
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }   
+    #recipe-img{
+        object-fit: cover;
+    }
+    #recipe-img img{
+        height: 45%;
+        width: 90%;
+        border: 12px;
+        margin: 16px 0;
+    }
+
+    #about{
+        margin: 22px 60px;
+    }
+    #about h2{
+        font-size: 46px;
+        font-weight: 600;
+    }
+    #about p{
+        font-size: 21px;
+        width: 88%;
+        padding-top: 18px;
+        letter-spacing: .6px;
+    }
+
+    #prepare-time{
+        height: 200px;
+        width: 86%;
+        padding: 20px 70px;
+        margin: 0 56px;
+        background-color: rgb(245, 226, 229);
+    }
+    #prepare-time h3{
+        font-size: 30px;
+        margin-left: -18px;
+        color: rgb(67, 33, 83);
+        padding: 12px 0;
+    }
+    #prepare-time ul{
+        color: rgb(74, 72, 72);
+        font-size: 18px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    #prepare-time li{
+        padding: 4px 0;
+    }
+
+    #ingredient{
+        margin: 22px 78px;
+    }
+    #ingredient h3{
+        font-size: 38px;
+        margin-left: -18px;
+        color: rgb(67, 33, 83);
+        padding: 12px 0;
+        letter-spacing: 1px;
+    }
+    #ingredient ul{
+        color: rgb(74, 72, 72);
+        font-size: 20px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    #ingredient li{
+        padding: 3px 0;
+    }
+    #ingredient #border-bottom{
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgb(90, 88, 88);
+    }
+
+    #instruction{
+        margin: 22px 78px;
+    }
+    #instruction h3{
+        font-size: 38px;
+        margin-left: -18px;
+        color: rgb(67, 33, 83);
+        padding: 12px 0;
+        letter-spacing: 1px;
+    }
+    #instruction ul{
+        padding-left: 18px;
+        list-style: number;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    #instruction li{
+        color: rgb(80, 78, 78);
+        padding: 6px 0;
+    }
+    #instruction #border-bottom{
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgb(90, 88, 88); 
+    }
+
+    #nutrition{
+        margin: 22px 78px;
+    }
+    #nutrition h3{
+        font-size: 38px;
+        margin-left: -18px;
+        color: rgb(67, 33, 83);
+        padding: 12px 0;
+        letter-spacing: 1px;
+    }
+    #nutrition p{
+        font-size: 22px;
+        color: rgb(80, 78, 78);
+    }
+    
+    #nutrition .benefits{
+        display: flex;
+        justify-content: start;
+        padding: 28px 32px;
+    }
+
+    #nutrition #benefits1{
+        gap: 422px;
+    }
+    #nutrition #benefits2{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 443px;
+    }
+    #nutrition #benefits3{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 428px;
+    }
+    #nutrition #benefits4{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 465px;
+        padding-bottom: 380px;
+    }
+    
+}
+
+/* MObile Screen Responsive */
+@media only screen and (max-width:540px){
+    .container{
+        background-color: rgb(250, 246, 234);
+        /* background-color: red; */
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }   
+    #recipe-img{
+        object-fit: cover;
+    }
+    #recipe-img img{
+        height: 45%;
+        width: 90%;
+        border: 12px;
+        margin: 16px 0;
+    }
+
+    #about{
+        margin: 20px 28px;
+    }
+    #about h2{
+        font-size: 39px;
+        font-weight: 600;
+    }
+    #about p{
+        font-size: 17px;
+        width: 90%;
+        padding-top: 16px;
+        padding-left: 12px;
+    }
+
+    #prepare-time{
+        height: 180px;
+        width: 80%;
+        padding: 12px 44px;
+        margin: 0 40px;
+        background-color: rgb(245, 226, 229);
+    }
+    #prepare-time h3{
+        font-size: 28px;
+        margin-left: -24px;
+        color: rgb(67, 33, 83);
+        padding: 8px 0;
+    }
+    #prepare-time ul{
+        color: rgb(74, 72, 72);
+        font-size: 16px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    #prepare-time li{
+        padding: 4px 0;
+    }
+
+    #ingredient{
+        margin: 20px 68px;
+    }
+    #ingredient h3{
+        font-size: 34px;
+        margin-left: -32px;
+        color: rgb(67, 33, 83);
+        padding: 8px 0;
+        letter-spacing: 1px;
+    }
+    #ingredient ul{
+        color: rgb(74, 72, 72);
+        font-size: 18px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    #ingredient li{
+        padding: 2px 0;
+    }
+    #ingredient #border-bottom{
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgb(90, 88, 88);
+    }
+
+    #instruction{
+        margin: 20px 68px;
+    }
+    #instruction h3{
+        font-size: 34px;
+        margin-left: -32px;
+        color: rgb(67, 33, 83);
+        padding: 8px 0;
+        letter-spacing: 1px;
+    }
+    #instruction ul{
+        padding-left: 14px;
+        list-style: number;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    #instruction li{
+        color: rgb(80, 78, 78);
+        padding: 6px 0;
+    }
+    #instruction #border-bottom{
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(90, 88, 88); 
+    }
+
+    #nutrition{
+        margin: 20px 68px;
+    }
+    #nutrition h3{
+        font-size: 34px;
+        margin-left: -32px;
+        color: rgb(67, 33, 83);
+        padding: 8px 0;
+        letter-spacing: 1px;
+    }
+    #nutrition p{
+        font-size: 20px;
+        color: rgb(80, 78, 78);
+    }
+    
+    #nutrition .benefits{
+        display: flex;
+        justify-content: start;
+        padding: 22px 8px;
+    }
+
+    #nutrition #benefits1{
+        gap: 102px;
+    }
+    #nutrition #benefits2{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 133px;
+    }
+    #nutrition #benefits3{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 118px;
+    }
+    #nutrition #benefits4{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 155px;
+        padding-bottom: 86px;
+    }
+
+}
+@media only screen and (max-width:412px){
+    #nutrition #benefits4{
+        border-top: 1px solid rgb(90, 88, 88);
+        gap: 155px;
+        padding-bottom: 246px;
+    }
+}
+
